@@ -1,13 +1,18 @@
 {
   "name": "eslint-config-custom",
+  "type": "module",
   "license": "MIT",
   "version": "0.0.0",
   "private": true,
+  "exports": {
+    "./vue": "./vue.js",
+    "./nuxt": "./nuxt.js",
+    "./library": "./library.js"
+  },
   "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@vercel/style-guide": "^5.1.0",
-    "@vue/eslint-config-typescript": "^12.0.0",
-    "eslint-config-turbo": "^1.11.3",
-    "typescript": "^5.3.3"
+    "eslint-plugin-vue": "^9.27.0",
+    "eslint-config-turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0"
   }
 }
